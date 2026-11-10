@@ -1,7 +1,7 @@
 #testing that the output of this function is a ggplot object
 test_that("The histogram function returns a ggplot object",{
   test <- histogram(penguins, bill_len)
-  expect_is(test, "ggplot")
+  expect_s3_class(test, "ggplot")
 })
 #testing that an error will through when a categorical variable is used
 test_that("categorical variable returns an error", {
