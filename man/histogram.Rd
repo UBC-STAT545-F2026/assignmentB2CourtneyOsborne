@@ -9,7 +9,7 @@ histogram(data, category, bin_width = 1)
 \arguments{
 \item{data}{is the dataset that you wish to plot from}
 
-\item{category}{is the numeric variable which will be plotted on the histogram}
+\item{category}{is the numerical variable which will be plotted on the histogram}
 
 \item{bin_width}{is the binwidth or the size of the bars in the histogram, with the default being 1}
 }
@@ -17,11 +17,10 @@ histogram(data, category, bin_width = 1)
 a histogram of the numeric variable
 }
 \description{
-This function creates a histogram of any numeric variable. This uses ggplot to do this
+This function creates a histogram of any numeric variable using ggplot.
 }
 \examples{
 histogram(penguins, bill_len)
 histogram(penguins, body_mass, bin_width = 10)
-
 
 }
